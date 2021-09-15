@@ -6,7 +6,7 @@ const InfoContainer = styled.div`
     display: flex;
     align-items: center;
     background: clear;
-    box-shadow: 6px 12px 12px ${theme.primary};
+    box-shadow: 0px 12px 12px ${theme.tertiary};
     margin-top 55px;
     padding-left: 30px;
     padding-right: 30px;
@@ -25,14 +25,14 @@ const DescriptionContainer = styled.div`
 `;
 
 const Title = styled.h2`
-    color: #FFFFFF;
+    color: #000000;
     font-size:28px;
     font-weight: 700;
     padding-right: 30px;
 `;
 
 const Details = styled.p`
-    color: #FFFFFF;
+    color: #000000;
     font-size: 19px;
     text-align: center;
     max-width: 70%;
