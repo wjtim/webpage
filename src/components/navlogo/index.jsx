@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 
-import MyLogo from "../../images/clrnobg.png"
+import MyLogo from "../../images/wtnobg.png"
 
 const LogoContainer = styled.div`
     display: flex;

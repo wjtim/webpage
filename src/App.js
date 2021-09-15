@@ -5,6 +5,7 @@ import { HomePage } from './containers/homePage';
 import { Button } from './components/button';
 import { Navbar } from './components/navbar';
 import { Marginer } from './components/marginer';
+import { Projects } from './containers/projects';
 
 
 
@@ -18,9 +19,8 @@ function App() {
           <Route exact path ="/">
             <HomePage />
           </Route>
-          <Route path="/about">
-            <Marginer direction="vertical" margin="8em" />
-            <Button>About Me</Button>
+          <Route exact path="/projects">
+            <Projects />
           </Route>
         </Switch>
       </BrowserRouter>

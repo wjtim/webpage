@@ -24,7 +24,7 @@ const BackgroundFilter = styled.div`
 
     width: 100%;
     height: 100%;
-    background-color: rgba(38, 70, 83, 0.9);
+    background-color: rgb(38, 70, 83);
     display: flex;
     flex-direction: column;
     opacity: 0.8;
