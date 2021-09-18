@@ -45,7 +45,8 @@ export function Navbar(props) {
             <a href="/" style={{ textDecoration: 'none' }}><NavButton>Home</NavButton></a>
             <a href="/projects" style={{ textDecoration: 'none' }}><NavButton>Projects</NavButton></a>
             <a href="/about" style={{ textDecoration: 'none' }}><NavButton >About Me</NavButton></a>
-            <a href="/contact" style={{ textDecoration: 'none' }}><NavButton>Contact</NavButton></a>    
+            <a href="/social" style={{ textDecoration: 'none' }}><NavButton>Social</NavButton></a>   
+            <a href="/contact" style={{ textDecoration: 'none' }}><NavButton>Contact</NavButton></a> 
         </AccessContainer>
     </NavBarContainer>
 }

@@ -6,6 +6,7 @@ import { Button } from './components/button';
 import { Navbar } from './components/navbar';
 import { Marginer } from './components/marginer';
 import { Projects } from './containers/projects';
+import Swup from 'swup';
 
 
 

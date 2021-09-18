@@ -27,6 +27,14 @@
 .App-link {
   color: #61daff;
 }
+
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
 .button{
   background-color: #282c34; 
   border: none;

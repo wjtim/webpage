@@ -6,10 +6,21 @@ const InfoContainer = styled.div`
     display: flex;
     align-items: center;
     background: clear;
-    box-shadow: 0px 12px 12px ${theme.tertiary};
     margin-top 55px;
     padding-left: 30px;
     padding-right: 30px;
+    transition: 1s;
+    :hover { 
+        background: #CDCDCD;
+        transform: translateX(30px);
+    }
+    :active {
+        transform: translateY(4px);
+        transform: translateX(30px);
+    }
+    :focus {
+        outline: none;
+    }
 `;
 
 const InfoImg = styled.img`

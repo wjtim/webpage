@@ -4,14 +4,14 @@ import { Logo } from "../../components/mainlogo";
 import { Marginer } from "../../components/marginer";
 import { Button } from "../../components/button";
 
-import TopSectionBackgroundImg from "../../images/projbg.png";
+import TopSectionBackgroundImg from "../../images/projbg2.png";
 import { DownArrow } from "../../components/arrow";
 import { Navbar } from "../../components/navbar";
 
 const TopSectionContainer = styled.div`
 
     width: 100%;
-    height: 45vh;
+    height: 94.1vh;
     background:url(${TopSectionBackgroundImg});
     background-position: 0px 0px;
     background-size: cover;
