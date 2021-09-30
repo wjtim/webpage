@@ -25,7 +25,7 @@ const ArrowIcon = styled.div`
     margin-top: 3px;
 `;
 
-export function DownArrow() {
+export function RightArrow() {
     return <ArrowContainer>
         <ArrowIcon>
             <FontAwesomeIcon icon={faAngleRight} />

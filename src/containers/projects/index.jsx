@@ -5,9 +5,10 @@ import { ScrollSection } from "./scrollDown";
 
 export function Projects(props) {
 
-    return <PageContainer>
+    return(
+     <PageContainer>
         <TopSection />
         <ScrollSection />
     </PageContainer>
-
+    );
 }

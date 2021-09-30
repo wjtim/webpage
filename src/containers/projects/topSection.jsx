@@ -1,12 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Logo } from "../../components/mainlogo";
-import { Marginer } from "../../components/marginer";
-import { Button } from "../../components/button";
-
+import { scroller } from "react-scroll";
 import TopSectionBackgroundImg from "../../images/projbg2.png";
-import { DownArrow } from "../../components/arrow";
-import { Navbar } from "../../components/navbar";
+import { DownArrow } from "../../components/downArrow";
 
 const TopSectionContainer = styled.div`
 
@@ -30,7 +26,7 @@ const BackgroundFilter = styled.div`
 
 `;
 
-const DownArrowContainer = styled.div`
+const ArrowContainer = styled.div`
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -39,7 +35,15 @@ const DownArrowContainer = styled.div`
 
 export function TopSection(props){
 
-    return<TopSectionContainer>
-    </TopSectionContainer>
+    const scrollToNext = () => {
+        scroller.scrollTo("projBot", {smooth: true, duration: 1500});
+    };
 
+    return(
+            <TopSectionContainer>
+                <ArrowContainer onClick={scrollToNext}>
+                   <DownArrow />
+                </ArrowContainer>
+            </TopSectionContainer>
+    );
 }

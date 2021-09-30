@@ -4,18 +4,18 @@ import { theme } from "../../theme";
 
 const InfoContainer = styled.div`
     display: flex;
+    flex: 1 1 0px;
     align-items: center;
     background: clear;
     margin-top 55px;
     padding-left: 30px;
     padding-right: 30px;
     transition: 1s;
+    width: 1371px;
+    height: 150px;
+    flex-direction: ${({ isReverse }) => isReverse && "row-reverse"};
     :hover { 
         background: #CDCDCD;
-        transform: translateX(30px);
-    }
-    :active {
-        transform: translateY(4px);
         transform: translateX(30px);
     }
     :focus {
@@ -24,14 +24,15 @@ const InfoContainer = styled.div`
 `;
 
 const InfoImg = styled.img`
-    width: 14em;
-    height: 7em;
+    width: 12em;
+    height: 5em;
 `;
 
 const DescriptionContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    min-width: 60%;
     max-width: 60%;
 `;
 
@@ -49,9 +50,9 @@ const Details = styled.p`
     max-width: 70%;
 `;
 export function InfoBox(props) {
-    const {imgUrl, title, description} = props;
+    const {imgUrl, title, description, isReverse } = props;
     return ( 
-    <InfoContainer>
+    <InfoContainer isReverse = {isReverse}>
         <DescriptionContainer>
             <Title>{title}</Title>
             <Details>{description}</Details>

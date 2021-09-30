@@ -5,7 +5,7 @@ import { Marginer } from "../../components/marginer";
 import { Button } from "../../components/button";
 
 import TopSectionBackgroundImg from "../../images/fogbg.jpg";
-import { DownArrow } from "../../components/arrow";
+import { RightArrow } from "../../components/rightArrow";
 import { Navbar } from "../../components/navbar";
 
 const TopSectionContainer = styled.div`
@@ -31,7 +31,7 @@ const BackgroundFilter = styled.div`
 
 `;
 
-const DownArrowContainer = styled.div`
+const ArrowContainer = styled.div`
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -45,6 +45,9 @@ export function TopSection(props){
             <Marginer direction="vertical" margin="8em" />
             <Logo />
             <Marginer direction="vertical" margin="4em" />
+            <ArrowContainer>
+                <RightArrow />
+            </ArrowContainer>
         </BackgroundFilter>
     </TopSectionContainer>
 
