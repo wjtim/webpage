@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import './App.css';
 import { HomePage } from './containers/homePage';
 import { Button } from './components/button';
@@ -16,14 +16,10 @@ function App() {
     <div className="App">
       <Navbar />
       <BrowserRouter>
-        <Switch>
-          <Route exact path ="/">
-            <HomePage />
-          </Route>
-          <Route exact path="/projects">
-            <Projects />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
       </BrowserRouter>
     </div>
 
