@@ -1,26 +1,24 @@
+import React from 'react'
 import logo from './logo.svg';
-import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, useLocation} from 'react-router-dom';
 import './App.css';
-import { HomePage } from './containers/homePage';
-import { Button } from './components/button';
 import { Navbar } from './components/navbar';
-import { Marginer } from './components/marginer';
+import { HomePage } from './containers/homePage';
 import { Projects } from './containers/projects';
-import Swup from 'swup';
-
-
-
+import { AboutMe } from './containers/aboutMe';
+import { useTransition, animated } from 'react-spring'
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
       <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<AboutMe />} />
+          </Routes>
     </div>
 
   );

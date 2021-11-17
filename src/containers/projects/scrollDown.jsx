@@ -5,6 +5,8 @@ import GISalmonImg from "../../images/basicfish.png";
 import Twitch from "../../images/twitch.png";
 import GitHub from "../../images/githublogo.png";
 import MoBeer from "../../images/mobeer.png";
+import { RightArrow } from "../../components/rightArrow";
+import { Marginer } from "../../components/marginer";
 
 
 const ContentContainer = styled.div`
@@ -45,7 +47,10 @@ export function ScrollSection(props) {
                 description="For everything and anything else I might be working on!"
                 imgUrl={GitHub} 
                 isReverse/></a>
-
+            <Marginer direction="vertical" margin="4em" />
+            <a href="/about" style={{ textDecoration: 'none' }}>
+                <RightArrow />
+            </a>
         </ContentContainer>
     );
 }

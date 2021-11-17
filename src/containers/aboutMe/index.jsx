@@ -1,11 +1,12 @@
 import React from "react";
 import { PageContainer } from "../../components/pageContainer";
-import { TopSection } from "./topSection";
 
-export function HomePage(props) {
+export function AboutMe(props) {
 
-    return <PageContainer>
-        <TopSection /> 
-    </PageContainer>
+    return(
+        <PageContainer>
+
+        </PageContainer>
+    ); 
 
 }

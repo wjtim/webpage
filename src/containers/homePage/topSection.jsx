@@ -45,9 +45,10 @@ export function TopSection(props){
             <Marginer direction="vertical" margin="8em" />
             <Logo />
             <Marginer direction="vertical" margin="4em" />
-            <ArrowContainer>
+            <a href="/projects" style={{ textDecoration: 'none' }}><ArrowContainer>
                 <RightArrow />
             </ArrowContainer>
+            </a>
         </BackgroundFilter>
     </TopSectionContainer>
 
