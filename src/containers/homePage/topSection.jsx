@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Logo } from "../../components/mainlogo";
 import { Marginer } from "../../components/marginer";
 import { Button } from "../../components/button";
-
+import { Link } from "react-router-dom";
 import TopSectionBackgroundImg from "../../images/fogbg.jpg";
 import { RightArrow } from "../../components/rightArrow";
 import { Navbar } from "../../components/navbar";
@@ -45,10 +45,11 @@ export function TopSection(props){
             <Marginer direction="vertical" margin="8em" />
             <Logo />
             <Marginer direction="vertical" margin="4em" />
-            <a href="/projects" style={{ textDecoration: 'none' }}><ArrowContainer>
+            <Link to="/projects">
+            <ArrowContainer>
                 <RightArrow />
             </ArrowContainer>
-            </a>
+            </Link>
         </BackgroundFilter>
     </TopSectionContainer>
 

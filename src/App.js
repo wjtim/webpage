@@ -6,19 +6,23 @@ import { Navbar } from './components/navbar';
 import { HomePage } from './containers/homePage';
 import { Projects } from './containers/projects';
 import { AboutMe } from './containers/aboutMe';
-import { useTransition, animated } from 'react-spring'
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 function App() {
   const location = useLocation();
-
+  console.log("location", location);
   return (
     <div className="App">
       <Navbar />
-          <Routes>
+      <TransitionGroup component={null}>
+        <CSSTransition key={location.key} classNames="slide" timeout={1000}>
+          <Routes location ={location}>
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<AboutMe />} />
           </Routes>
+        </CSSTransition>
+    </TransitionGroup> 
     </div>
 
   );

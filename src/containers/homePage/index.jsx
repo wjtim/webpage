@@ -4,8 +4,9 @@ import { TopSection } from "./topSection";
 
 export function HomePage(props) {
 
-    return <PageContainer>
+    return( 
+    <PageContainer>
         <TopSection /> 
     </PageContainer>
-
+    );
 }

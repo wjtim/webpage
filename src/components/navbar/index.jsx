@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
 import { NavLogo } from "../navlogo/index";
 import { theme } from "../../theme";
 import { Button } from '../button';
@@ -42,8 +42,8 @@ export function Navbar(props) {
         <a href="/" style={{ textDecoration: 'none' }}><NavLogo /></a>
         </BrandContainer>
         <AccessContainer>
-            <a href="/projects" style={{ textDecoration: 'none' }}><NavButton>Projects</NavButton></a>
-            <a href="/about" style={{ textDecoration: 'none' }}><NavButton >About Me</NavButton></a>
+            <Link to="/projects"><NavButton>Projects</NavButton></Link>
+            <Link to="/about"><NavButton >About Me</NavButton></Link>
             <a href="/social" style={{ textDecoration: 'none' }}><NavButton>Social</NavButton></a>   
             <a href="/contact" style={{ textDecoration: 'none' }}><NavButton>Contact</NavButton></a> 
         </AccessContainer>

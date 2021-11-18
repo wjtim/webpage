@@ -7,6 +7,7 @@ import GitHub from "../../images/githublogo.png";
 import MoBeer from "../../images/mobeer.png";
 import { RightArrow } from "../../components/rightArrow";
 import { Marginer } from "../../components/marginer";
+import { Link } from "react-router-dom";
 
 
 const ContentContainer = styled.div`
@@ -48,9 +49,9 @@ export function ScrollSection(props) {
                 imgUrl={GitHub} 
                 isReverse/></a>
             <Marginer direction="vertical" margin="4em" />
-            <a href="/about" style={{ textDecoration: 'none' }}>
+            <Link to="/about">
                 <RightArrow />
-            </a>
+            </Link>
         </ContentContainer>
     );
 }
