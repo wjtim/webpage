@@ -5,6 +5,7 @@ import './App.css';
 import { Navbar } from './components/navbar';
 import { HomePage } from './containers/homePage';
 import { Projects } from './containers/projects';
+import { ScrollSection } from "./containers/projects/scrollDown";
 import { AboutMe } from './containers/aboutMe';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 

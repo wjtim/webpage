@@ -33,11 +33,11 @@ const ArrowContainer = styled.div`
     transform: translateX(-50%);
 `;
 
-export function TopSection(props){
+const scrollToNext = () => {
+    scroller.scrollTo("projBot", {smooth: true, duration: 1500});
+};
 
-    const scrollToNext = () => {
-        scroller.scrollTo("projBot", {smooth: true, duration: 1500});
-    };
+export function TopSection(props){
 
     return(
             <TopSectionContainer>

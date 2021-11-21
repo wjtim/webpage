@@ -39,13 +39,13 @@ const NavButton = styled(Button)`
 export function Navbar(props) {
     return <NavBarContainer>
         <BrandContainer>
-        <a href="/" style={{ textDecoration: 'none' }}><NavLogo /></a>
+        <Link to="/" style={{ textDecoration: 'none' }}><NavLogo /></Link>
         </BrandContainer>
         <AccessContainer>
-            <Link to="/projects"><NavButton>Projects</NavButton></Link>
-            <Link to="/about"><NavButton >About Me</NavButton></Link>
-            <a href="/social" style={{ textDecoration: 'none' }}><NavButton>Social</NavButton></a>   
-            <a href="/contact" style={{ textDecoration: 'none' }}><NavButton>Contact</NavButton></a> 
+            <Link to="/projects" style={{ textDecoration: 'none' }}><NavButton>Projects</NavButton></Link>
+            <Link to="/about" style={{ textDecoration: 'none' }}><NavButton >About Me</NavButton></Link>
+            <Link to="/social" style={{ textDecoration: 'none' }}><NavButton>Social</NavButton></Link>   
+            <Link to="/contact" style={{ textDecoration: 'none' }}><NavButton>Contact</NavButton></Link> 
         </AccessContainer>
     </NavBarContainer>
 }

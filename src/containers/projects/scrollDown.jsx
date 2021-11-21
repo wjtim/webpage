@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import TopSectionBackgroundImg from "../../images/projbg2.png";
 import { InfoBox } from '../../components/infoBox';
 import GISalmonImg from "../../images/basicfish.png";
 import Twitch from "../../images/twitch.png";
