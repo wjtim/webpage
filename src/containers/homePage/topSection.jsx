@@ -2,11 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Logo } from "../../components/mainlogo";
 import { Marginer } from "../../components/marginer";
-import { Button } from "../../components/button";
 import { Link } from "react-router-dom";
 import TopSectionBackgroundImg from "../../images/fogbg.jpg";
 import { RightArrow } from "../../components/rightArrow";
-import { Navbar } from "../../components/navbar";
 
 const TopSectionContainer = styled.div`
 
