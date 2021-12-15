@@ -42,8 +42,8 @@ export function Navbar(props) {
         <Link to="/" style={{ textDecoration: 'none' }}><NavLogo /></Link>
         </BrandContainer>
         <AccessContainer>
-            <Link to="/projects" style={{ textDecoration: 'none' }}><NavButton>Projects</NavButton></Link>
             <Link to="/about" style={{ textDecoration: 'none' }}><NavButton >About Me</NavButton></Link>
+            <Link to="/projects" style={{ textDecoration: 'none' }}><NavButton>Projects</NavButton></Link>
             <Link to="/social" style={{ textDecoration: 'none' }}><NavButton>Social</NavButton></Link>   
             <Link to="/contact" style={{ textDecoration: 'none' }}><NavButton>Contact</NavButton></Link> 
         </AccessContainer>

@@ -1,12 +1,14 @@
 import React from "react";
+import styled from "styled-components";
+import ImageCarousel from "../../components/imageCarousel";
+import { CarouselData } from "../../components/imageCarousel/carouselData";
 import { PageContainer } from "../../components/pageContainer";
-import { PictureCarousel } from "./pictureCarousel";
 
 export function AboutMe(props) {
 
     return(
         <PageContainer>
-            <PictureCarousel/>
+            <ImageCarousel slides={CarouselData}/>
         </PageContainer>
     ); 
 

@@ -11,12 +11,12 @@ const InfoContainer = styled.div`
     padding-left: 30px;
     padding-right: 30px;
     transition: 1s;
-    width: 1371px;
-    height: 150px;
+    width: 800px;
+    height: 200px;
     flex-direction: ${({ isReverse }) => isReverse && "row-reverse"};
     :hover { 
-        background: #CDCDCD;
         transform: translateX(30px);
+        box-shadow: 0px 7px 16px #607d8b;
     }
     :focus {
         outline: none;
@@ -24,7 +24,7 @@ const InfoContainer = styled.div`
 `;
 
 const InfoImg = styled.img`
-    width: 12em;
+    width: 10em;
     height: 5em;
 `;
 
@@ -37,14 +37,14 @@ const DescriptionContainer = styled.div`
 `;
 
 const Title = styled.h2`
-    color: #000000;
+    color: #FFFFFF;
     font-size:28px;
     font-weight: 700;
     padding-right: 30px;
 `;
 
 const Details = styled.p`
-    color: #000000;
+    color: #FFFFFF;
     font-size: 19px;
     text-align: center;
     max-width: 70%;

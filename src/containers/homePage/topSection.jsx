@@ -5,6 +5,8 @@ import { Marginer } from "../../components/marginer";
 import { Link } from "react-router-dom";
 import TopSectionBackgroundImg from "../../images/fogbg.jpg";
 import { RightArrow } from "../../components/rightArrow";
+import { useMediaQuery } from "react-responsive";
+import { deviceSize } from "../../components/responsive";
 
 const TopSectionContainer = styled.div`
 
@@ -38,12 +40,16 @@ const ArrowContainer = styled.div`
 
 export function TopSection(props){
 
+    const isMobile = useMediaQuery({maxWidth: deviceSize.mobile});
+
+    console.log("Mobile: ", isMobile);
+
     return<TopSectionContainer>
         <BackgroundFilter>
             <Marginer direction="vertical" margin="8em" />
             <Logo />
             <Marginer direction="vertical" margin="4em" />
-            <Link to="/projects">
+            <Link to="/about">
             <ArrowContainer>
                 <RightArrow />
             </ArrowContainer>
